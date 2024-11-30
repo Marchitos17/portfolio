@@ -42,7 +42,7 @@
                     Sono ansioso di esplorare nuove opportunità e di contribuire con le mie competenze a progetti che fanno la differenza.</p>
                 <ul class="skills-list">
                     <li><strong>Competenze principali:</strong></li>
-                    <li>⚡ HTML, CSS, Bootstrap</li>
+                    <li>⚡ HTML, CSS, Javascript, Bootstrap</li>
                     <li>⚡ Framework backend come Laravel</li>
                     <li>⚡ Github</li>
                 </ul>
@@ -174,7 +174,7 @@
     <!-- Contact Section -->
     <section class="contatti" id="contatti">
         <h2 class="heading">Contat<span>timi</span></h2>
-        <form action="https://formspree.io/f/xjkvpjze" method="POST">
+        <form id="contact-form" action="https://formspree.io/f/xjkvpjze" method="POST" onsubmit="resetForm()">
             <div class="input-box">
                 <input type="text" name="nome" placeholder="Nome" required>
                 <input type="email" name="email" placeholder="Email" required>
@@ -192,6 +192,14 @@
     </footer>
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="js/script.js"></script>
-
+    <script>
+        // Funzione per resettare il modulo dopo l'invio
+        function resetForm() {
+            // Pausa per consentire a Formspree di inviare i dati
+            setTimeout(function() {
+                document.getElementById("contact-form").reset();
+            }, 1000); // 1 secondo di attesa prima di resettare il modulo
+        }
+    </script>
 </body>
 </html>
