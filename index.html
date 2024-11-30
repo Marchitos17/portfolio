@@ -194,6 +194,17 @@
     </footer>
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="js/script.js"></script>
+    <script>
+        function invioEmail() {
+            const nome = document.getElementById('nome').value;
+            const email = document.getElementById('email').value;
+            const messaggio = document.getElementById('messaggio').value;
+            const subject = 'Messaggio di contatto';
+            const body = `Nome: ${nome}\nEmail: ${email}\nMessaggio: ${messaggio}`;
+            const mailtoLink = `mailto:marcluc1998@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+            window.location.href = mailtoLink;
+        }
+    </script>
 
 </body>
 </html>
