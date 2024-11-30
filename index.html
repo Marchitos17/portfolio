@@ -44,8 +44,9 @@
                     <li><strong>Competenze principali:</strong></li>
                     <li>⚡ HTML, CSS, Bootstrap</li>
                     <li>⚡ Framework backend come Laravel</li>
+                    <li>⚡ Github</li>
                 </ul>
-                <a href="" class="btn" style="margin-top: 20px;">Scarica CV</a>
+                <a href="Cv Marco Spinazzola.pdf" class="btn" style="margin-top: 20px;" download>Scarica CV</a>
             </div>
             <div class="about-image">
                 <img src="immagine/profilo.jpeg" alt="Foto di Marco Spinazzola">
@@ -170,21 +171,23 @@
             </div>
         </div>
     </section>
-    
     <!-- Contact Section -->
     <section class="contatti" id="contatti">
         <h2 class="heading">Contat<span>timi</span></h2>
-        <form action="#">
+        <form>
             <div class="input-box">
-                <input type="text" placeholder="Nome">
-                <input type="text" placeholder="Email">
+                <input type="text" id="nome" placeholder="Nome" required>
+                <input type="email" id="email" placeholder="Email" required>
             </div>
-            <textarea name="" id="" cols="30" rows="10" placeholder="Inserire messaggio"></textarea>
-            <input type="submit" value="Invia" class="btn">
+            <textarea id="messaggio" cols="30" rows="10" placeholder="Inserire messaggio" required></textarea>
+            <!-- Bottone che apre l'email con il link mailto -->
+            <a href="mailto:marcluc1998@gmail.com?subject=Messaggio%20di%20contatto&body=Nome:%20%0AEmail:%20%0AMessaggio:%20" class="btn">
+                Invia email
+            </a>
         </form>
     </section>
 
-
+    
     <!-- Footer -->
     <footer>
         <p>© 2024 Marco Spinazzola. All rights reserved.</p>

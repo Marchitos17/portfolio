@@ -101,7 +101,7 @@ body {
 }
 
 .about-text h2 {
-    font-size: 2rem;
+    font-size: 3rem;
     color: #00c3ff;
     margin-bottom: 10px;
 }
@@ -282,7 +282,7 @@ section{
 }
 
 #menu-icona{
-    font-size: 3.6rem;
+    font-size: 5.6rem;
     color: var(--text-color);
     display: none;
 }
@@ -582,6 +582,13 @@ section{
     transform: scale(1.05);
     box-shadow: 0 0 25px var(--main-color);
 }
+.about-text p {
+    color:white;
+}
+.skills-list li{
+    color:black;
+}
+
 
 .timeline-contenuto h3 {
     font-size: 20px;
@@ -652,7 +659,30 @@ section{
     #menu-icona{
         display: block;
     }
-
+    .header nav a{
+        font-size: 2rem;
+    }
+    .navbar a:hover,
+    .navbar a.active
+    {
+        color: var(--main-color);
+    }
+    
+    .about-text p{
+        font-size: 2rem;
+    }
+    .header .logo{
+        font-size: 2rem;;
+    }
+    .about-container{
+        text-align: center;
+    }
+    .skills-list li{
+        font-size: 2rem;
+    }
+    .hero p{
+        font-size: 2rem;
+    }
     .navbar{
         position: absolute;
         top: 100%;
@@ -669,9 +699,10 @@ section{
     }
     .navbar a{
         display: block;
-        font-size: 20rem;
+        font-size: 200px;
         margin: 3rem 0;
         color: white;
+        text-align: center;
     }
     .navbar .tasto:hover{
         position: absolute;
