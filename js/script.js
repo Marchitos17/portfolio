@@ -51,3 +51,19 @@ const typed = new Typed('.multiple-text',{
     backDelay: 1000,
     loop: true
 });
+
+// Funzione per resettare il modulo dopo l'invio
+function resetForm() {
+    // Pausa per consentire a Formspree di inviare i dati
+    setTimeout(function() {
+        // Resetta il modulo
+        document.getElementById("contact-form").reset();
+        
+        // Scorri verso l'alto
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth" // Scroll con animazione
+        });
+    }, 1000); // 1 secondo di attesa prima di resettare il modulo
+}
+

@@ -54,7 +54,7 @@
         </div>
     </section>
     
-    
+    <!-- Esperienze Section -->
     <section class="info" id="info">
         <h2 class="heading">Esperienze</h2>
 
@@ -171,7 +171,7 @@
             </div>
         </div>
     </section>
-    <!-- Contact Section -->
+    <!-- Contatti Section -->
     <section class="contatti" id="contatti">
         <h2 class="heading">Contat<span>timi</span></h2>
         <form id="contact-form" action="https://formspree.io/f/xjkvpjze" method="POST" onsubmit="resetForm()">
@@ -183,23 +183,11 @@
             <button type="submit" class="btn">Invia email</button>
         </form>
     </section>
-    
-
-    
     <!-- Footer -->
     <footer>
         <p>© 2024 Marco Spinazzola. All rights reserved.</p>
     </footer>
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="js/script.js"></script>
-    <script>
-        // Funzione per resettare il modulo dopo l'invio
-        function resetForm() {
-            // Pausa per consentire a Formspree di inviare i dati
-            setTimeout(function() {
-                document.getElementById("contact-form").reset();
-            }, 1000); // 1 secondo di attesa prima di resettare il modulo
-        }
-    </script>
 </body>
 </html>
