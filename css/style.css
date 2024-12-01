@@ -147,7 +147,24 @@ body {
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
+/*Bottoni hero*/
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 10px;
+}
 
+.social-icon {
+    font-size: 34px;
+    color: #5e5b5b;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.social-icon:hover {
+    color: #007bff; /* Colore per il hover, puoi cambiarlo a tuo piacere */
+}
 
 /* Portfolio Section */
 .portfolio {
@@ -410,7 +427,34 @@ section{
     margin-top: 2rem;
     cursor: pointer;
 }
+/*Bottone footer*/
+#scrollTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 23px;
+    right: 30px;
+    background-color: var(--main-color); /* Un blu soft */
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 50%;
+    font-size: 18px;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    z-index: 1000;
+}
 
+#scrollTopBtn:hover {
+    background-color: #0056b3; /* Blu più scuro al passaggio del mouse */
+    transform: scale(1.1); /* Ingrandisce leggermente il pulsante */
+}
+
+#scrollTopBtn:focus {
+    outline: none;
+}
+/**/
 .esperienze{
     max-width: 1200px;
     margin: auto;
@@ -564,6 +608,12 @@ section{
 @media (max-width: 768px){
     #menu-icona{
         display: block;
+    }
+    #scrollTopBtn {
+        padding: 10px 12px; /* Riduce il padding per schermi piccoli */
+        font-size: 16px; /* Riduce la dimensione del testo */
+        bottom: 15px; /* Riduce la distanza dal fondo */
+        right: 15px; /* Riduce la distanza dal lato destro */
     }
     .header nav a{
         font-size: 2rem;

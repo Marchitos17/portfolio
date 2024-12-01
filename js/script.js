@@ -39,18 +39,10 @@ ScrollReveal({
 });
 
 ScrollReveal().reveal('.hero, .heading, .about-image', { origin: 'top' });
-ScrollReveal().reveal('.about-text h2', { origin: 'bottom' });
+ScrollReveal().reveal('.about-text h2, .timeline-contenuto', { origin: 'bottom' });
 ScrollReveal().reveal('.about-text p', { origin: 'left' });
 ScrollReveal().reveal('.skills-list', { origin: 'right' });
 
-
-const typed = new Typed('.multiple-text',{
-    strings : ['"Junior Full Stack Developer"','Customer Service'],
-    typeSpeed: 100,
-    backSpeed: 100,
-    backDelay: 1000,
-    loop: true
-});
 
 // Funzione per resettare il modulo dopo l'invio
 function resetForm() {
@@ -65,5 +57,19 @@ function resetForm() {
             behavior: "smooth" // Scroll con animazione
         });
     }, 1000); // 1 secondo di attesa prima di resettare il modulo
+}
+// Mostra il bottone solo quando si scorre giù
+window.onscroll = function() {
+    var btn = document.getElementById('scrollTopBtn');
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        btn.style.display = "block";
+    } else {
+        btn.style.display = "none";
+    }
+}
+
+// Scroll to top function
+function scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
