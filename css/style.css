@@ -248,12 +248,15 @@ section{
     font-size: 1.7em;
     color: var(--text-color);
     margin-left: 2rem;
+    font-weight: bold;
 }
 
 .navbar a:hover,
 .navbar a.active
 {
+    
     color: var(--main-color);
+    text-decoration: underline;
 }
 
 #menu-icona{
